@@ -21,7 +21,7 @@ Installation instructions
 
 Detailed instructions/example
 
-1. Add Skyline output data and parameter file to "Master" folder. Detailed information on the parameter file can be found below. In this example, the CD4+ hypoxia data in Figure 5 will be analyzed. The Skyline output data are contained in "CD4_Combined_Skyline_Output.csv". Note that data from both PNGase and tryptic fractions has been added. The parameter file in this example is "parameter_CD4.csv".
+1. Add Skyline export data and parameter file to "Master" folder. Detailed information on the parameter file can be found below. In this example, the CD4+ hypoxia data in Figure 5 will be analyzed. The Skyline export data are contained in "CD4_Combined_Skyline_Export.csv". Note that data from both PNGase and tryptic fractions has been added. The parameter file in this example is "parameter_CD4.csv".
 2. Open "Workflow.R" in RStudio.
 2. Set the working directory to the "Master" folder.
 4. Set source to "./Master/SILAC_Script/SILAC_v2.R".
@@ -30,7 +30,7 @@ Detailed instructions/example
 7. Input desired name for output .csv file (e.g. "Script_Output_CD4.csv").
 8. Set desired volcano plot labeling properties. Default is no proteins labeled: custom = "none", customlab = "custom". If you would like to label a specific protein, change inputs to include protein names of interest: custom = c("IL18R1", "CD70"), customlab = "custom". If you would like all protein labeled: custom = "", customlab = "normal".
 9. Set log2(fold-change) cutoff. For 1.5 fold up- or downregulation, use r.cutoff = 0.58. Can increase or decrease stringency.
-11. Execute each line sequentially. Plots will be generated within seconds as described below.
+11. Execute each line sequentially and wait for line to process before moving to the next. Plots (described below) will be generated within seconds.
 12. Export plots and the output .csv file will be deposited in the working directory (e.g. "Master") for further analysis.
 
 
