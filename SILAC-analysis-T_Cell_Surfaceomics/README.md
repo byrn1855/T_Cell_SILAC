@@ -28,7 +28,7 @@ Detailed instructions/example
 5. Set "input" to the name of the Skyline export file (e.g. "CD4_Combined_Skyline_Export.csv").
 6. Set "para" to the name of the parameter file (e.g. "parameter_CD4.csv").
 7. Input desired name for output .csv file (e.g. "Script_Output_CD4.csv").
-8. Set desired volcano plot labeling properties. Default is all protein labels: custom = "", customlab = "normal". If you would like to label a specific protein, change inputs to include protein names of interest: custom = c("IL18R1", "CD70"), customlab = "custom". If you would like no protein labels: custom = "none", customlab = "custom".
+8. Set desired volcano plot labeling properties. Default is no proteins labeled: custom = "none", customlab = "custom". If you would like to label a specific protein, change inputs to include protein names of interest: custom = c("IL18R1", "CD70"), customlab = "custom". If you would like all protein labeled: custom = "", customlab = "normal".
 9. Set log2(fold-change) cutoff. For 1.5 fold up- or downregulation, use r.cutoff = 0.58. Can increase or decrease stringency.
 11. Execute each line sequentially. Plots will be generated within seconds as described below.
 12. Export plots and the output .csv file will be deposited in the working directory (e.g. "Master") for further analysis.
