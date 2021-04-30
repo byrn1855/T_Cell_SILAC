@@ -1,7 +1,7 @@
 setwd("/Users/jamesbyrnes/Desktop/Master")
 source("/Users/jamesbyrnes/Desktop/Master/SILAC_Script/SILAC_v2.R")
 calRatio3(input = "CD4_Combined_Skyline_Export.csv", para = "parameter_CD4.csv")
-write.csv(skypro, "./Script_Output_CD4_2.csv")
+write.csv(skypro, "./Script_Output_CD4.csv")
 log2dist(skypep, style = "box")
 HLpro(skypep)
 HLpep(skypep)
